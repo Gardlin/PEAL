@@ -30,14 +30,14 @@ eval_all_finetune.sh 3DMatch(or 3DLoMatch)
 ```
 ## PEAL-2dprior
 Stay tuned, to be released.
-## Human-guided prior for low-overlap point cloud registration(use PEAL-3dprior for interactive low-overlap point cloud registration.) 
-Stay tuned.
-##[PREDATOR](https://github.com/prs-eth/OverlapPredator) backbone
+
+## Human-guided prior for low-overlap point cloud registration
+Using PEAL-3dprior for interactive low-overlap point cloud registration. Stay tuned.
+
+## [PREDATOR](https://github.com/prs-eth/OverlapPredator) backbone
 Stay tuned.
 
 ## Acknowledgements
-
-
 - [PREDATOR](https://github.com/prs-eth/OverlapPredator)
 - [GeoTransformer](https://github.com/qinzheng93/GeoTransformer)
 We thank the respective authors for open sourcing their methods, the code is heavily borrowed from [GeoTransformer](https://github.com/qinzheng93/GeoTransformer)
