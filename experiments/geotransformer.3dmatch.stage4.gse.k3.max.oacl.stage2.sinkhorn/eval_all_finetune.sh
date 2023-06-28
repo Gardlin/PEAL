@@ -1,5 +1,5 @@
 
-for epoch in $(seq 12 14); do
+for epoch in $(seq 10 20); do
   for n in $(seq 0 8); do
       python test.py --test_epoch=$epoch --benchmark=$1 --iteration=$n
 
