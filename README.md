@@ -3,6 +3,7 @@ This is the official repo of CVPR 2023 paper :  '' PEAL: Prior-embedded Explicit
 <div  align="center">  
 <img src="https://github.com/Gardlin/PEAL/blob/main/assets/iter_sample.gif" alt="show" align=center  />
 </div>  
+
 # DATA 
 [3D prior data](https://drive.google.com/file/d/1hdlHmEsHWfHtOi72IB8TuSQ9dwQfmmVD/view?usp=sharing) Unzip the file, you can get two folders, one is for training, the other is for testing/validating.
 
