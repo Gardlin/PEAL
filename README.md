@@ -41,7 +41,7 @@ eval_all_finetune.sh 3DMatch(or 3DLoMatch)
 Stay tuned, to be released.
 
 ## Human-guided prior for low-overlap point cloud registration
-Using PEAL-3dprior for interactive low-overlap point cloud registration. Stay tuned.
+Using the model of PEAL-3dprior for interactive low-overlap point cloud registration. Stay tuned.
 
 ## [PREDATOR](https://github.com/prs-eth/OverlapPredator) backbone
 Stay tuned.
