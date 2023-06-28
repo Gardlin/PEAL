@@ -7,7 +7,7 @@ This is the official repo of CVPR 2023 paper :  '' PEAL: Prior-embedded Explicit
 # DATA 
 [3D prior data](https://drive.google.com/file/d/1hdlHmEsHWfHtOi72IB8TuSQ9dwQfmmVD/view?usp=sharing) Unzip the file, you can get two folders, one is for training, the other is for testing/validating.
 
-[Point cloud data]](https://github.com/prs-eth/OverlapPredator)
+[Point cloud data](https://github.com/prs-eth/OverlapPredator)
 The dataset is downloaded from [PREDATOR](https://github.com/prs-eth/OverlapPredator).
 
 ## Training
