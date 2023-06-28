@@ -40,4 +40,5 @@ Stay tuned.
 ## Acknowledgements
 - [PREDATOR](https://github.com/prs-eth/OverlapPredator)
 - [GeoTransformer](https://github.com/qinzheng93/GeoTransformer)
+
 We thank the respective authors for open sourcing their methods, the code is heavily borrowed from [GeoTransformer](https://github.com/qinzheng93/GeoTransformer)
