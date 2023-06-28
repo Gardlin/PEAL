@@ -32,7 +32,6 @@ ensure_dir(_C.registration_dir)
 
 # data
 _C.data = edict()
-_C.data.dataset_root = osp.join(_C.root_dir, 'data', '3DMatch')
 _C.data.dataset_root = ''
 
 # train data
@@ -60,7 +59,7 @@ _C.train.prior_min_points = 100
 _C.train.overlap_min_points = 50
 _C.train.superglue_prior=  ''
 _C.train.using_geo_prior=True
-_C.train.using_2d_prior=True
+_C.train.using_2d_prior=False
 _C.train.superglue_window_size=5
 
 
