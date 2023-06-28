@@ -33,7 +33,7 @@ ensure_dir(_C.registration_dir)
 # data
 _C.data = edict()
 _C.data.dataset_root = osp.join(_C.root_dir, 'data', '3DMatch')
-_C.data.dataset_root = '/home/levi/yjl/pcrcg_data/geotransformer_color/Geotransformer_implicit_color/data/3DMatch'
+_C.data.dataset_root = ''
 
 # train data
 _C.train = edict()
@@ -52,13 +52,13 @@ _C.test.point_limit = None
 
 
 # prior data
-_C.train.image_path= '/home/lab507/data/3img_3dmatch/3dmatch_image'
-_C.train.geo_train_prior= '/home/levi/yjl/PEAL-V1/data_prior/geo_prior_train_epoch-15-rre19.287'
-_C.train.geo_prior= '/home/levi/yjl/PEAL-V1/data_prior/geo_prior_testval'
+_C.train.image_path= '3dmatch_image'
+_C.train.geo_train_prior= 'train_prior'
+_C.train.geo_prior= 'geo_prior_testval'
 _C.test.using_iter_prior = True
 _C.train.prior_min_points = 100
 _C.train.overlap_min_points = 50
-_C.train.superglue_prior=  '/home/lab507/data/SuperGluePretrainedNetwork-master/dump_match_pairs_160_2img'
+_C.train.superglue_prior=  ''
 _C.train.using_geo_prior=True
 _C.train.using_2d_prior=True
 _C.train.superglue_window_size=5
