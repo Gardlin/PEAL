@@ -21,15 +21,14 @@ python setup.py build develop
 The dataset is downloaded from [PREDATOR](https://github.com/prs-eth/OverlapPredator).
 
 ## Training
-The code for 3DMatch/3DLoMatch is in `experiments/geotransformer.3dmatch.stage4.gse.k3.max.oacl.stage2.sinkhorn`. Use the following command for training.
-
+The code for 3DMatch/3DLoMatch is in `experiments/geotransformer.3dmatch.stage4.gse.k3.max.oacl.stage2.sinkhorn`. 
 You need to modify the source paths in  config.py.
 ```
 _C.data.dataset_root -> point cloud data root
 _C.train.geo_train_prior ->  3D prior data for training
 _C.train.geo_prior  ->  3D prior data for testing/validating
 ```
-
+Use the following command for training.
 ```bash
 CUDA_VISIBLE_DEVICES=0 python trainval.py
 ```
