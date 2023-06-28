@@ -1,6 +1,6 @@
 
 for epoch in $(seq 10 20); do
-  for n in $(seq 0 8); do
+  for n in $(seq 0 6); do
       python test.py --test_epoch=$epoch --benchmark=$1 --iteration=$n
 
       python eval.py --test_epoch=$epoch --benchmark=$1 --method=lgr --iteration=$n
