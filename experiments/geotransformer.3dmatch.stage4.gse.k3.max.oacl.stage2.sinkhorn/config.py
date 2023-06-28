@@ -86,7 +86,7 @@ _C.optim.lr = 1e-4
 _C.optim.lr_decay = 0.95
 _C.optim.lr_decay_steps = 1
 _C.optim.weight_decay = 1e-6
-_C.optim.max_epoch = 42
+_C.optim.max_epoch = 20
 _C.optim.grad_acc_steps = 1
 
 # model - backbone
