@@ -30,12 +30,12 @@ _C.train.geo_prior  ->  3D prior data for testing/validating
 ```
 Use the following command for training.
 ```bash
-CUDA_VISIBLE_DEVICES=0 python trainval.py
+ python trainval.py
 ```
 
 ## Testing
-```bash
-eval_all_finetune.sh 3DMatch(or 3DLoMatch)
+```
+sh eval_all_finetune.sh 3DMatch(or 3DLoMatch)
 ```
 ## PEAL-2dprior
 Stay tuned, to be released.
