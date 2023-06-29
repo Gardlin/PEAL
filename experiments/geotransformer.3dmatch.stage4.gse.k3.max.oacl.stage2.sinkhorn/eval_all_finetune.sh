@@ -5,7 +5,7 @@ for epoch in $(seq 10 20); do
 
       python eval.py --test_epoch=$epoch --benchmark=$1 --method=lgr --iteration=$n
 #      for k in 250 500 1000 2500 5000; do
-#        for m in $(seq 1 3);  do
+#        for m in $(seq 1 5);  do
 #            python eval.py --test_epoch=$epoch --benchmark=$1  --num_corr=$k --method=ransac --iteration=$n
 #          done
 #      done
