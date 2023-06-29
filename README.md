@@ -40,6 +40,9 @@ Use the following command for training.
 ```
 sh eval_all_finetune.sh 3DMatch(or 3DLoMatch)
 ```
+
+## [Pretrained models](https://drive.google.com/file/d/1BMiymZgTXBCbcqh7h-2KdF8lHWgJCvXQ/view?usp=sharing)
+
 ## PEAL-2dprior
 Stay tuned, to be released.
 
