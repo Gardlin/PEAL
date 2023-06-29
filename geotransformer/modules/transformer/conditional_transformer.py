@@ -113,16 +113,16 @@ class RPEConditionalTransformer(nn.Module):
                     anchor_feats0 = feats0[0, ref_overlapped_points_c_idx, :].unsqueeze(0)
                     anchor_feats1 = feats1[0, src_overlapped_points_c_idx, :].unsqueeze(0)
                     if ref_no_overlapped_points_c_idx.shape[0] > 0 and src_no_overlapped_points_c_idx.shape[0] > 0:
-                        nooverlap_feats0 = feats0[0, ref_no_overlapped_points_c_idx, :].unsqueeze(0)
-                        nooverlap_feats1 = feats1[0, src_no_overlapped_points_c_idx, :].unsqueeze(0)
-                        feats0[0, ref_no_overlapped_points_c_idx, :], _ = self.layers[i](nooverlap_feats0,
+                        non_anchor_feats0 = feats0[0, ref_no_overlapped_points_c_idx, :].unsqueeze(0)
+                        non_anchor_feats1 = feats1[0, src_no_overlapped_points_c_idx, :].unsqueeze(0)
+                        feats0[0, ref_no_overlapped_points_c_idx, :], _ = self.layers[i](non_anchor_feats0,
                                                                                          anchor_feats0,
                                                                                          memory_masks=masks1)
-                        feats1[0, src_no_overlapped_points_c_idx, :], _ = self.layers[i](nooverlap_feats1,
+                        feats1[0, src_no_overlapped_points_c_idx, :], _ = self.layers[i](non_anchor_feats1,
                                                                                          anchor_feats1,
                                                                                          memory_masks=masks1)
-                    feats0, scores0 = self.layers[i](feats0, feats1, memory_masks=masks1)  ###up
-                    feats1, scores1 = self.layers[i](feats1, feats0, memory_masks=masks0)  ###up
+                    feats0, scores0 = self.layers[i](feats0, feats1, memory_masks=masks1)  
+                    feats1, scores1 = self.layers[i](feats1, feats0, memory_masks=masks0)  
             if self.return_attention_scores:
                 attention_scores.append([scores0, scores1])
         if self.return_attention_scores:
