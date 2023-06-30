@@ -19,6 +19,7 @@ python setup.py build develop
 
 # DATA 
 [3D prior data trainging](https://drive.google.com/file/d/1ArrJvTzlbQjSHZi3Zl0oHesuoE7Nr16P/view?usp=sharing) 
+
 [3D prior data for testing/validating](https://drive.google.com/file/d/1COsTRJu48xz-qakfMnA7DZsDlfGVYbxa/view?usp=sharing) Unzip these files, you can get two folders, one is for training, the other is for testing/validating.
 
 [Point cloud data](https://github.com/prs-eth/OverlapPredator)
